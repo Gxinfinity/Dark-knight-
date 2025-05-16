@@ -12,17 +12,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "22565342"))
 
-API_HASH = getenv("API_HASH", "")
+API_HASH = getenv("API_HASH", "75e035926f72f2f4155a6f5f6e64be03")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "7201420162:AAGLrxRRqs3k0dqXvXciedRwQxFD8CRqEpE")
 
 
 # Database to save your chats and stats... 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -45,19 +45,19 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002529294898"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7048354045").split())
+    map(int, getenv("OWNER_ID", "7926944005").split())
 )  # Input type must be interger
 
 
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
-    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-VenomMusic-01-02"
+    "PRIVACY_LINK", "https://t.me/who_cares_qt"
 )
 
 
@@ -98,7 +98,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/venombolteop/VenomMusic",
+    "https://github.com/Gxinfinity/VenomMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
@@ -111,11 +111,11 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/TomatoFist"
+    "SUPPORT_CHANNEL", "https://t.me/gxinfinity_support"
 )
 
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/Itz_venom_family"
+    "SUPPORT_GROUP", "https://t.me/infinitygx_bot_support"
 )  
 
 
@@ -170,7 +170,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 #
 SET_CMDS = getenv("SET_CMDS", "True")
 
-raw_sessions = getenv("STRING_SESSIONS", "")
+raw_sessions = getenv("STRING_SESSIONS", "BQGox7EAt-gsKjccGLltGZVca4UNIEbtDDZcGw-eID--Z1FWrTHz2cb7kwucmFaNQzPyhfUaXSQR_B-onLj-P213g1bzp12N86cZ_pT_iyO1FfvgBpjemQi0OWefT1B3lf0MV8pVzGYE-C3jYzqPlcciYzCk1ZK8o6_WBKMvhpYxH8j8Q3tf4S1G52CXnRig0W9GpLhyqbNZpbJTQFxZDD8joV6lcT1JToaQFV-Ri48vpYaT4mEHuk7jqhvuRv4Gh9zmi-IWXwDPgxOPLcHuvdbQlHE3z625YCyTgEr4h2k9OljY5ET1MwiyCNGWtNsFtpYo6fZ0y1s3ZmlMyHe8jG8AMLG0fgAAAAGJKA9qAA")
 
 # Split the sessions only if raw_sessions is not empty
 STRING_SESSIONS = list(map(str.strip, raw_sessions.split(","))) if raw_sessions else []
